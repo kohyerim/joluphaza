@@ -31,8 +31,8 @@ public class Main {
             HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 
             // code start
-            HttpsURLConnection conn = dreamy.login();
-            dreamy.getSooup(conn);
+            //dreamy.login();
+            dreamy.getInfo();
         }
         catch (NoSuchAlgorithmException | IOException | KeyManagementException e) {
             e.printStackTrace();
