@@ -31,8 +31,8 @@ public class Main {
             HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 
             // code start
-            //dreamy.login();
-            dreamy.getInfo();
+            String cookie = dreamy.login();
+            dreamy.getInfo(cookie);
         }
         catch (NoSuchAlgorithmException | IOException | KeyManagementException e) {
             e.printStackTrace();
